@@ -1,7 +1,6 @@
 import bc from "bcryptjs"
 import User from "../models/user.model.js"
 import { generateTokens } from "../lib/utils.js"
-import { Profiler } from "react"
 
 export const signup = async (req, res) => {
     const { fullName, email, password } = req.body
